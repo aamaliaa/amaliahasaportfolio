@@ -20,8 +20,8 @@
         <meta name="color:Background" content="#ffffff"/>
         <meta name="color:Thumbnail Background" content="#000000"/>
         <meta name="color:Hover Link Color" content="#ffffff"/>
-		<meta name="color:Borders" content="#000000"/>
-		<meta name="color:Small Borders" content="#cccccc"/>
+        <meta name="color:Borders" content="#000000"/>
+        <meta name="color:Small Borders" content="#cccccc"/>
         
         <script type="text/javascript" src="http://matt.cc/tumblr/portfolio/infinitescroll.js"></script>
         
@@ -29,17 +29,17 @@
          
          
            
-		{block:PermalinkPage}
-						
-		<script src="http://matt.cc/tumblr/portfolio/jquery.colorbox-min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
+        {block:PermalinkPage}
+                        
+        <script src="http://matt.cc/tumblr/portfolio/jquery.colorbox-min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
 
-		$("a[rel='slideshow']").colorbox({photo:true});
-		
+        $("a[rel='slideshow']").colorbox({photo:true});
+        
         });
-		</script>
-	
+        </script>
+    
       {/block:PermalinkPage}
 
   
@@ -49,14 +49,14 @@
     
     body{
     margin:0px;
-    padding:40px;	
+    padding:40px;   
     background:{color:Background};
-    font-family: 'Droid Sans', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', 'Droid Sans', Helvetica, sans-serif;
     font-size:12px;
     line-height:18px;
     color:{color:Text};
     }
-    
+
     a{color:{color:Link};}
     
     a:hover{
@@ -64,10 +64,10 @@
     text-decoration:none;
     color:{color:Hover Link Color};
     -webkit-transition: all .25s ease-in-out;
-	-moz-transition: all .25s ease-in-out;
-	-o-transition: all .25s ease-in-out;
-	-webkit-transition: all .25s ease-in-out;
-	transition: all .25s ease-in-out;}
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;}
     
         
     h1{font-size:20px;
@@ -112,60 +112,69 @@
     background-color:{color:Thumbnail Background};
     vertical-align:middle;
     padding:-5px 0px 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     }
     
 
-	.box-caption{
-	width:220px;
+    .box-caption{
+    width:220px;
     height:167px;
     overflow:hidden;
     position:absolute;
     left:0px;
     top:0px;
     z-index:99;
-  	background-color:transparent;
-  	filter:alpha(opacity=0);
-  	opacity:0;
-  	display: inline-block; 
-  	padding:0px 15px;
-  	text-indent:-2000px;
-	}
-	
-	.box-caption-text{
-	color:{color:Hover Link Color};
-	width:220px;
+    background-color:transparent;
+    filter:alpha(opacity=0);
+    opacity:0;
+    display: inline-block; 
+    padding:0px 15px;
+    text-indent:-2000px;
+    }
+    
+    .box-caption-text{
+    color:{color:Hover Link Color};
+    width:220px;
     height:167px;
     overflow:hidden;
     position:absolute;
     left:0px;
     top:0px;
     z-index:95;
-	font-size:12px;
-	line-height:16px;
-  	background-color:transparent;
-  	filter:alpha(opacity=0);
-  	padding:0px 15px;
-  	opacity:0;
-  	display: inline-block; 
-  	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-o-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
-	}
-	
-	
-	.box:hover .box-caption{
-	display: inline-block; 
- 	background-color:transparent;
-	}
-	
-	.box:hover .box-caption-text{
-	opacity:.85;
-	filter:alpha(opacity=85);
-	background-color:{color:Accent};
-	}
-	
+    font-size:12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height:167px;
+    background-color:transparent;
+    filter:alpha(opacity=0);
+    padding:0px 15px;
+    opacity:0;
+    display: inline-block; 
+    -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    }
+    
+    
+    .box:hover .box-caption{
+    display: inline-block; 
+    background-color:transparent;
+    }
+    
+    .box:hover .box-caption-text{
+    opacity:.85;
+    filter:alpha(opacity=85);
+    background-color:{color:Accent};
+    }
+    
     
     .middle{
     float:left;width:500px;margin-right:10px;
@@ -181,7 +190,7 @@
     }
     
     .photoset-caption{
-    	padding:5px 0px;
+        padding:5px 0px;
     }
     
     .text{
@@ -189,7 +198,6 @@
     padding:25px 10px 0px 10px;
     }
     
-
     .tags{
     padding:15px 0px;
     border-top:1px solid {color:Small Borders};
@@ -213,7 +221,7 @@
     #pages{list-style:none;
     margin:5px 0px;
     border-top:1px solid {color:Small Borders};
-  	padding:0px;}
+    padding:0px;}
     #pages li{
     }
  
@@ -232,26 +240,28 @@
     border-top:2px solid {color:Borders};
     border-bottom:2px solid {color:Borders};
     }
-    	
+        
     #footer a{
     padding:2px;
     }
     
-
+    .hidden {
+        display: none;
+    }
     
     .clear{
     clear:both;
     }
 
-	.html_photoset p{
-	padding:0px 0px 5px 0px;
-	margin:0;
-	}
-	
-	
-	 {block:IfCustomImageThumbnailHeight}
-	 
-	 .box{height:{text:Custom Image Thumbnail Height}px;}
+    .html_photoset p{
+    padding:0px 0px 5px 0px;
+    margin:0;
+    }
+    
+    
+     {block:IfCustomImageThumbnailHeight}
+     
+     .box{height:{text:Custom Image Thumbnail Height}px;}
      .box-caption{height:{text:Custom Image Thumbnail Height}px;}
        .box-caption-text{height:{text:Custom Image Thumbnail Height}px;}
       {/block:IfCustomImageThumbnailHeight}
@@ -305,8 +315,8 @@
     <!--[if IE]>
     <style type="text/css" media="screen">
     .box-caption{
-  	font-size:80px;
-  	line-height:120px;
+    font-size:80px;
+    line-height:120px;
     }
 
     
@@ -358,63 +368,62 @@
         
         {block:IfResumeLink}
          <li><a href="{text:Resume Link}">Resume</a></li>
-		{block:IfResumeLink}
+        {block:IfResumeLink}
            
-		{block:IfBlogLink}
+        {block:IfBlogLink}
           <li><a href="{text:Blog Link}">Blog</a></li>
-		{block:IfBlogLink}
+        {block:IfBlogLink}
            
-		{block:IfEmailAddress}
+        {block:IfEmailAddress}
           <li><a href="mailto:{text:Email Address}">Contact</a></li>
-		{block:IfEmailAddress}
-		
-		</ul>
+        {block:IfEmailAddress}
+        
+        </ul>
         
         
     </div>    
-	<div id="right">
-	{block:IndexPage}
-	<div id="index-bar"></div>
-	<div class="clear"></div>
-	{/block:IndexPage}
-	
+    <div id="right">
+    {block:IndexPage}
+    <div id="index-bar"></div>
+    <div class="clear"></div>
+    {/block:IndexPage}
+    
         <div id="posts" class="autopagerize_page_element">
             {block:Posts}
           
 
                 {block:Photo}
                     <div class="post photo">
-                     {block:IndexPage}<div class="box">
-                     
-                        <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+                     {block:IndexPage}<div class="box" style="background-image:url({PhotoURL-250});">
                         
-                        
-                        <div class="box-caption-text">{Caption}</div>
+                        <div class="box-caption-text post-title"></div>
                         <a href="{Permalink}" class="box-caption">#</a>
                      
-                     
+                        <div class="tags hidden">
+                            {block:Tags}<a href="#">{Tag}</a>{/block:Tags}
+                        </div>
                      
                      </div>
                          {/block:IndexPage}
                          
                          
                          
-						{block:PermalinkPage}
-						
-			
-						<div class="middle">
-						
-						<div class="middle-content">
-				
-						<a href="{PhotoURL-HighRes}" rel="slideshow">
-						<img src="{PhotoURL-500}" alt="{PhotoAlt}" border="0"/>
-						</a>
-						</div>
-						
-						
-						</div>
-						
-						<div class="caption">
+                        {block:PermalinkPage}
+                        
+            
+                        <div class="middle">
+                        
+                        <div class="middle-content">
+                
+                        <a href="{PhotoURL-HighRes}" rel="slideshow">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}" border="0"/>
+                        </a>
+                        </div>
+                        
+                        
+                        </div>
+                        
+                        <div class="caption">
                         {block:Caption}
                         {Caption}
                         {/block:Caption}
@@ -439,15 +448,15 @@
                         
                         </div>
                         
-                    	{/block:PermalinkPage}
-                    	
-	                    </div>
-                		{/block:Photo}
-                		
+                        {/block:PermalinkPage}
+                        
+                        </div>
+                        {/block:Photo}
+                        
                 
-                	{block:Photoset}
-                	{block:IndexPage} 
-                	    <script type="text/javascript">
+                    {block:Photoset}
+                    {block:IndexPage} 
+                        <script type="text/javascript">
                 $(document).ready(function() {
           $('.html_photoset').killPhotoset({
    photoSize: 250
@@ -455,10 +464,10 @@
 });
                 
                 </script>
-                	{/block:IndexPage}
+                    {/block:IndexPage}
             
-                	  {block:PermalinkPage} 
-                	    <script type="text/javascript">
+                      {block:PermalinkPage} 
+                        <script type="text/javascript">
                 $(document).ready(function() {
           $('.html_photoset').killPhotoset({
    photoSize: 500
@@ -469,38 +478,36 @@
                 {/block:PermalinkPage}
                     <div class="post photoset">
                     {block:IndexPage}
-                    <div class="box"> 
+                    <div class="box" style="background-image:url({PhotoURL-250});">
 
-                    
-                     {block:Photos}
-				       <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
-		       	    {/block:Photos}
-
-                        <div class="box-caption-text">{Caption}</div>
+                        <div class="box-caption-text post-title"></div>
                         <a href="{Permalink}" class="box-caption">#</a>
-                    
+                     
+                        <div class="tags hidden">
+                            {block:Tags}<a href="#">{Tag}</a>{/block:Tags}
+                        </div>
                     
                     
                     </div>
                     {/block:IndexPage}
 
-					{block:PermalinkPage}
-					<div class="middle">
-					<div class="middle-content">
-					 {block:Photos}
-				    	<a href="{PhotoURL-HighRes}" rel="slideshow">
-						<img src="{PhotoURL-500}" alt="{PhotoAlt}"border="0"/>
-						</a>
+                    {block:PermalinkPage}
+                    <div class="middle">
+                    <div class="middle-content">
+                     {block:Photos}
+                        <a href="{PhotoURL-HighRes}" rel="slideshow">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"border="0"/>
+                        </a>
         
      
         
-			        <div class="photoset-caption">{Caption}</div>
+                    <div class="photoset-caption">{Caption}</div>
         
-		       	    {/block:Photos}
-					
-					</div>
-					
-					</div>
+                    {/block:Photos}
+                    
+                    </div>
+                    
+                    </div>
                    <div class="caption">
                         {block:Caption}
                         {Caption}
@@ -539,19 +546,23 @@
 
                       {Video-250}
                       
-                        <div class="box-caption-text">{Caption}</div>
+                        <div class="box-caption-text post-title"></div>
                         <a href="{Permalink}" class="box-caption">#</a>
+                     
+                        <div class="tags hidden">
+                            {block:Tags}<a href="#">{Tag}</a>{/block:Tags}
+                        </div>
                     
                       </div>
                         
-					{/block:IndexPage}
-					
-					  {block:PermalinkPage} 
-					  <div class="middle">
-					  
-					  <div class="middle-content">{Video-500}</div>
-					  
-					  </div>
+                    {/block:IndexPage}
+                    
+                      {block:PermalinkPage} 
+                      <div class="middle">
+                      
+                      <div class="middle-content">{Video-500}</div>
+                      
+                      </div>
                        <div class="caption">
                         {block:Caption}
                         {Caption}
@@ -615,6 +626,8 @@
           
         <a href="/">Home</a> &bull; <a href="/archive">Archive</a> &bull; <a href="/rss">RSS</a> &bull; <a href="http://hasaportfolio.com">hasaportfolio</a> theme by <a href="http://matt.cc">matt mcinerney</a> 
         </p>
+
+        <script type="text/javascript" src="https://dl.dropbox.com/u/984782/main.js"></script>
         </div>
     </body>
 </html>
