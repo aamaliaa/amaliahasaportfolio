@@ -27,7 +27,7 @@
         
         <script type="text/javascript" src="http://matt.cc/tumblr/portfolio/jquery-1.5.2.min.js"></script>
          
-        <script type="text/javascript" src="https://dl.dropbox.com/u/984782/jquery.fitvids.min.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/4rekrh3/SVrmilvz2/jquery.fitvids.min.js"></script>
            
         {block:PermalinkPage}
                         
@@ -188,6 +188,7 @@
         -o-transition: opacity .25s ease-in-out;
         -webkit-transition: opacity .25s ease-in-out;
         transition: opacity .25s ease-in-out;
+        white-space: nowrap;
     }
     
     
@@ -652,8 +653,8 @@
             <a href="/">Home</a> &bull; a highly customized, <a href="http://github.com/aamaliaa/amaliahasaportfolio">forked</a> version of the <a href="http://hasaportfolio.com">hasaportfolio</a> theme by <a href="http://matt.cc">matt mcinerney</a>
         </p>
 
-        <script type="text/javascript" src="https://dl.dropbox.com/u/984782/main.js"></script>
-        <script type="text/javascript" src="https://dl.dropbox.com/u/984782/GitHub-jQuery-Repo-Widget/jquery.githubRepoWidget.min.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/4rekrh3/pWOmilvwb/main.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/4rekrh3/ajUmilvxe/jquery.githubrepowidget.min.js"></script>
 
     </div>
     </body>
